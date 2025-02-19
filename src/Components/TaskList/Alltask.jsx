@@ -5,12 +5,10 @@ import FailedTAsk from './FailedTAsk'
 import CompleteTask from './CompleteTask'
 
 const Alltask = ({data}) => {
-    console.log(data)
   return (
     <div id='alltask' className='h-[55%] flex items-center gap-5 justify-start mt-10 overflow-x-scroll py-5 '>
       
       {data.tasks.map((elem,idx)=>{
-        
         if(elem.active){
             return <AcceptTask key={idx}/>
         }
